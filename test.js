@@ -1,12 +1,11 @@
 import { BskyAgent } from '@atproto/api'
-import * as dotenv from 'dotenv'
-dotenv.config()
+import 'dotenv/config'
 
 const agent = new BskyAgent({
   service: 'https://bsky.social'
 })
 
-console.log(process.env.ID)
+console.log('Login with', process.env.ID)
 
 await agent.login({
   identifier: process.env.ID,
