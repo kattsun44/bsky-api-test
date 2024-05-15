@@ -11,3 +11,5 @@ await agent.login({
   identifier: process.env.ID,
   password: process.env.PASSWORD
 })
+
+export { agent }
