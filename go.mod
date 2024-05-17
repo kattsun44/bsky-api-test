@@ -3,9 +3,13 @@ module github.com/kattsun44/bsky-api-test
 go 1.22.3
 
 require (
+	github.com/bluesky-social/indigo v0.0.0-20240513163359-ad38fe30ee6e
+	github.com/caarlos0/env v3.5.0+incompatible
+	github.com/joho/godotenv v1.5.1
+)
+
+require (
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/bluesky-social/indigo v0.0.0-20240513163359-ad38fe30ee6e // indirect
-	github.com/caarlos0/env v3.5.0+incompatible // indirect
 	github.com/carlmjohnson/versioninfo v0.22.5 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.3 // indirect
@@ -40,7 +44,6 @@ require (
 	github.com/jbenet/goprocess v0.1.4 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
 	github.com/lestrrat-go/blackmagic v1.0.1 // indirect
 	github.com/lestrrat-go/httpcc v1.0.1 // indirect
