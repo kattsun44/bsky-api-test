@@ -6,6 +6,7 @@ import (
 	"log"
 
 	comatproto "github.com/bluesky-social/indigo/api/atproto"
+	"github.com/bluesky-social/indigo/api/bsky"
 	"github.com/bluesky-social/indigo/util/cliutil"
 	"github.com/bluesky-social/indigo/xrpc"
 	"github.com/joho/godotenv"
@@ -37,5 +38,16 @@ func main() {
 	xrpcc.Auth.Did = auth.Did
 	xrpcc.Auth.AccessJwt = auth.AccessJwt
 	xrpcc.Auth.RefreshJwt = auth.RefreshJwt
-	fmt.Println(xrpcc)
+
+	profile, err := bsky.ActorGetProfile(context.TODO(), xrpcc, "kattsun.dev")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("Did: %s\n", profile.Did)
+	fmt.Printf("Handle: %s\n", profile.Handle)
+	fmt.Printf("DisplayName: %v\n", stringp(profile.DisplayName))
+	fmt.Printf("Description: %v\n", stringp(profile.Description))
+	fmt.Printf("Follows: %d\n", int64p(profile.FollowsCount))
+	fmt.Printf("Followers: %d\n", int64p(profile.FollowersCount))
+
 }
