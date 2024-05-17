@@ -1,0 +1,4 @@
+github.com/bluesky-social/indigo v0.0.0-20240513163359-ad38fe30ee6e h1:mzQlFLxDhqhrD3sFpIhbNLvjuE/kzvr8KJcDNI0ifzk=
+github.com/bluesky-social/indigo v0.0.0-20240513163359-ad38fe30ee6e/go.mod h1:dBIOGhsiK0rgEETnxiGiuEyrSx6DKxEotHIPbiKD6WU=
+github.com/caarlos0/env v3.5.0+incompatible h1:Yy0UN8o9Wtr/jGHZDpCBLpNrzcFLLM2yixi/rBrKyJs=
+github.com/caarlos0/env v3.5.0+incompatible/go.mod h1:tdCsowwCzMLdkqRYDlHpZCp2UooDD3MspDBjZ2AD02Y=
