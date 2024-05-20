@@ -4,11 +4,13 @@
     "bluesky",
     "bsky",
     "cliutil",
+    "codepaths",
     "comatproto",
     "godotenv",
     "joho",
     "kattsun",
     "stringp",
+    "tsbuildinfo",
     "xrpc",
     "xrpcc"
   ]
