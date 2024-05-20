@@ -7,13 +7,9 @@ const agent = new BskyAgent({
 
 console.log('Login with', process.env.ID)
 
-async function login(): Promise<void> {
-  await agent.login({
-    identifier: process.env.ID || "",
-    password: process.env.PASSWORD || ""
-  })
-}
-
-login()
+await agent.login({
+  identifier: process.env.ID || "",
+  password: process.env.PASSWORD || ""
+})
 
 export { agent }
