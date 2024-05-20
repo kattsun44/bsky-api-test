@@ -16,4 +16,4 @@ async function login(): Promise<void> {
 
 login()
 
-module.exports = { agent }
+export { agent }
