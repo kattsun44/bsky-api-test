@@ -1,10 +1,6 @@
 import { RichText } from '@atproto/api'
 import { agent } from './agent.js'
 
-import { AppBskyRichtextFacet } from '@atproto/api'
-
-type Facet = AppBskyRichtextFacet.Main
-
 const rt = new RichText({
   text: 'This is RichText Test by @kattsun.dev. My Github URL is https://github.com/kattsun44.'
 })
