@@ -6,6 +6,8 @@ const agent = new BskyAgent({
 })
 
 console.log('Login with', process.env.ID)
+console.log('')
+console.log('')
 
 await agent.login({
   identifier: process.env.ID || "",

@@ -1,5 +1,5 @@
 import { RichText } from '@atproto/api'
-import { agent } from './login.js'
+import { agent } from './agent.js'
 
 import { AppBskyRichtextFacet } from '@atproto/api'
 

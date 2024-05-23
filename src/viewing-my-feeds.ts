@@ -1,4 +1,4 @@
-import { agent } from './login.js'
+import { agent } from './agent.js'
 
 const { data } = await agent.getAuthorFeed({
   actor: process.env.DID || "",
